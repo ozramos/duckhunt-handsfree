@@ -5,7 +5,7 @@
   "scripts": {
     "gulp": "gulp",
     "lint": "eslint src/**/*.js",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --inline --hot --host 0.0.0.0 --public $PROJECT_DOMAIN.glitch.me",
     "build": "webpack",
     "audio": "gulp audio",
     "images": "gulp images",
