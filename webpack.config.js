@@ -33,6 +33,10 @@ module.exports = {
       {
         test: /\.(mp3|ogg)$/,
         loader: 'file-loader',
+      },
+      {
+        test: /\.css$/,
+        use: ['css-loader']
       }
     ]
   },
@@ -42,7 +46,6 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
-    host: '0.0.0.0',
     compress: true,
     inline: true,
     port: 8080

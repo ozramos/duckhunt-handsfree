@@ -5,7 +5,7 @@
   "scripts": {
     "gulp": "gulp",
     "lint": "eslint src/**/*.js",
-    "start": "webpack-dev-server --inline --hot --host 0.0.0.0 --public dot-chard.glitch.me",
+    "start": "webpack-dev-server",
     "build": "webpack",
     "audio": "gulp audio",
     "images": "gulp images",
@@ -36,7 +36,6 @@
     "gsap": "^1.18.0",
     "gulp": "^4.0.0",
     "gulp-shell": "^0.5.2",
-    "handsfree": "^2.0.3",
     "hard-source-webpack-plugin": "^0.12.0",
     "howler": "^2.0.2",
     "json-loader": "^0.5.4",
@@ -47,5 +46,9 @@
     "tween.js": "^16.6.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.9.1"
+  },
+  "dependencies": {
+    "css-loader": "^1.0.1",
+    "handsfree": "^2.1.0"
   }
 }

@@ -388,6 +388,7 @@ class Game {
   }
 
   handleClick(event) {
+    console.log(event);
     let clickPoint = {
         x: event.data.global.x,
         y: event.data.global.y
