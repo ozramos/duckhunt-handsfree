@@ -36,6 +36,7 @@
     "gsap": "^1.18.0",
     "gulp": "^4.0.0",
     "gulp-shell": "^0.5.2",
+    "handsfree": "^2.0.3",
     "hard-source-webpack-plugin": "^0.12.0",
     "howler": "^2.0.2",
     "json-loader": "^0.5.4",

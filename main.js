@@ -1,4 +1,7 @@
 import Game from './src/modules/Game';
+import Handsfree from 'handsfree'
+handsfree = new Handsfree({debug: true})
+handsfree.start()
 
 document.addEventListener('DOMContentLoaded', function() {
 
