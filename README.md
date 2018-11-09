@@ -1,5 +1,7 @@
 # DUCK HUNT JS v3.0
 
+![](https://media.giphy.com/media/MWvfeCGV2MYmaRzvkP/giphy.gif)
+
 [Play the game](http://duckhuntjs.com)
 
 This is an implementation of DuckHunt in Javascript and HTML5. It uses the PixiJS rendering engine, Green Sock Animations, Howler, and Bluebird Promises.
