@@ -1,4 +1,4 @@
-# About
+# About (made with Handsfree v2 [currently at v4])
 
 ![](https://media.giphy.com/media/MWvfeCGV2MYmaRzvkP/giphy.gif)
 
