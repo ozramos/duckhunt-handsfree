@@ -2,16 +2,64 @@
 
 ![](https://media.giphy.com/media/MWvfeCGV2MYmaRzvkP/giphy.gif)
 
-This is an example of using Handsfree.js to handsfree-ify an existing game! This was done by adding the script to the index.html:
+This is an example of using Handsfree.js to handsfree-ify an existing game! This was done by importing the project via NPM:
 
-```html
-<script src="https://unpkg.com/handsfree@<4/dist/handsfree.js"></script>
 ```
+npm i handsfreejs
+```
+
+I then `required` it in [/main.js](https://glitch.com/edit/#!/duckhunt-handsfree?path=main.js:5:31) and instantiated it:
+
+```js
+import Handsfree from 'handsfree'
+
+document.addEventListener('DOMContentLoaded', function() {
+  handsfree = new Handsfree({debug: true})
+  //...
+})
+```
+
+Finally, I created a plugin that triggers a native click over the canvas:
+
+```js
+/**
+ * Plugin for clicking
+ */
+ handsfree.use({
+   // The unique name of the plugin
+   name: 'pewpewpew',
+
+   // This is called on every frame, with an array of face objects
+   onFrame: faces => {
+     // Lets loop through each detected face
+     faces.forEach(face => {
+       // Let's detect the mousedown state
+       if (face.cursor.state.mouseDown) {
+         // Dispatch a mousedown at the point of click, bubbling in case we click a span element inside a button for example
+         game.handleClick({
+           data: {
+             global: {
+               x: face.cursor.x,
+               y: face.cursor.y
+             }
+           }
+         })
+       }
+     })
+   }
+ })
+```
+
 
 ## Instructions
 
 1. Move head around to move cursor
 2. Smile to shoot/click
+
+---
+
+# ORIGINAL README
+repo: https://github.com/MattSurabian/DuckHunt-JS
 
 ---
 
