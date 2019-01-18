@@ -1,6 +1,21 @@
-# DUCK HUNT JS v3.0
+# About
 
 ![](https://media.giphy.com/media/MWvfeCGV2MYmaRzvkP/giphy.gif)
+
+This is an example of using Handsfree.js to handsfree-ify an existing game! This was done by adding the script to the index.html:
+
+```html
+<script src="https://unpkg.com/handsfree@<4/dist/handsfree.js"></script>
+```
+
+## Instructions
+
+1. Move head around to move cursor
+2. Smile to shoot/click
+
+---
+
+# DUCK HUNT JS v3.0
 
 [Play the game](http://duckhuntjs.com)
 
