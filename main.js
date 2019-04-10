@@ -5,7 +5,7 @@ import Game from './src/modules/Game';
 import Handsfree from 'handsfree'
 
 document.addEventListener('DOMContentLoaded', function() {
-  window.handsfree = new Handsfree({debug: true})
+  window.handsfree = new Handsfree({debug: false})
   let game = new Game({
     spritesheet: 'sprites.json'
   });
