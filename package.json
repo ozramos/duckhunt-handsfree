@@ -33,7 +33,7 @@
     "exports-loader": "^0.6.3",
     "file-loader": "^0.10.0",
     "glob": "^7.1.1",
-    "gsap": "^1.18.0",
+    "gsap": "^3.6.0",
     "gulp": "^4.0.0",
     "gulp-shell": "^0.5.2",
     "hard-source-webpack-plugin": "^0.12.0",
